@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Łukasz Petryk - stomatolog</title>
+    <meta name="description" content="Łukasz Petryk - stomatolog. Pełny zakres usług stomatologicznych." />
+    <meta name="keywords" content="Łukasz Petryk, stomatolog, Kraków, stomatologia zachowawcza, protetyka, periodontologia, stomatologia estetyczna" />
+    <link rel="stylesheet" type="text/css" href="sass/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper1">
+            <p>gabinet stomatologiczny</p>
+            <p>lek. stom.</p>
+            <h1>Łukasz Petryk</h1>
+        </div>
+        <div class="wrapper2">
+            <div class="carousel">
+                <div class="skull"><img src="Images/skull.png" alt="czaszka" width="192" height="144"></div>
+                <div class="rtg"><img class="pantomo" src="Images/rtg.jpg" alt="rtg zębów" width="141" height="90"></div>
+            </div>
+        </div>
+        <hr>
+        <div class="wrapper3">
+            Zakres usług:
+        </div>
+        <div class="men1">
+                <p class="titleMenu1"><span>STOMATOLOGIA </span>ZACHOWAWCZA</p>
+            <div class="content1">STOMATOLOGIA ZACHOWAWCZA<br>
+                <hr><br>Przegląd stomatologiczny <br>Porada lekarska (plan leczenia, wypisanie recepty) <br>Znieczulenie <br>Dewitalizacja zęba <br>Wypełnienie ubytku materiałem porcelanowym <br>Wypełnienie ubytku materiałem Empress <br>Wypełnienie typu „kanapka” glassjonomer <br>Wypełnienie ubytku materiałem chemoutwardzalnym <br></div>
+        </div>
+        <div class="men2">
+                <p class="titleMenu2">PROTETYKA</p>
+            <div class="content2">PROTETYKA<br>
+                <hr><br>Odbudowa brakującego zęba na włóknie szklanym <br>Zamknięcie diastemy materiałem światłoutwardzalnym <br>Licówka z materiału światłoutwardzalnego <br>Odbudowa korony zęba na sztyfcie tytanowym, włóknie szklanym <br>Odbudowa zęba trzonowego systemem tytanowym <br>Odbudowa korony zęba <br>Korony<br>Mosty<br>Protezy<br></div>
+        </div>
+        <div class="men3">
+                <p class="titleMenu3">PERIODONTOLOGIA</p>
+            <div class="content3">PERIODONTOLOGIA<br>
+                <hr><br>Leczenie chorób przyzębia <br>Leczenie nadwrażliwości zębiny <br>Laser biosymulacyjny <br>Opatrunek leczniczy <br>Nadwrażliwość na zmianę temperatury <br>Powstawanie szpar między zębami <br>Przemieszczanie się zębów <br>Odsłonięcie szyjek zębowych <br>Wydłużanie się koron zębów <br>Rozchwianie zębów <br>Nieprzyjemny zapach z ust <br>Zaczerwienienie lub krwawienie dziąseł <br></div>
+        </div>
+        <div class="men4">
+                <p class="titleMenu4"><span>STOMATOLOGIA </span>ESTETYCZNA</p>
+            <div class="content4">STOMATOLOGIA ESTETYCZNA<br>
+                <hr><br>Usunięcie kamienia nazębnego <br>Piaskowanie - usunięcie osadu nazębnego <br>Kompletna higienizacja jamy ustnej (ultradźwięki + piaskowanie + fluoryzacja) <br>Fluoryzacja kontaktowa <br>Zabieg remineralizacji szkliwa <br>Wybielanie zębów<br></div>
+        </div>
+        <hr>
+        <div class="wrapper4">
+            <p><span>ulica: Emila Zegadłowicza 4, </span>31-104 Kraków, <br>&#9742; +48 501 725 706</p>
+        </div>
+        <!-- style="width:600px;height:450px" -->
+        <div class="wrapper5">
+            <div id="map" class="plan"></div>
+        </div>
+        <footer>Copyright &#169; 2017 by <a class="email" href="mailto:justynazofiakozub@gmail.com">Justyna Kozub</a></footer>
+    </div>
+    <script>
+        function myMap() {
+            var myCenter = new google.maps.LatLng(50.057987, 19.929124);
+            var mapCanvas = document.getElementById("map");
+            var mapOptions = {
+                center: myCenter,
+                zoom: 18
+            };
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+            var marker = new google.maps.Marker({
+                position: myCenter
+            });
+            marker.setMap(map);
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCheib-j5T8L-K-8eSjgFbGFGrfmj7dYs0&callback=myMap"></script>
+</body>
+
+</html>
